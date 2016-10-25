@@ -42,8 +42,8 @@
 			}
 			function Map(){
 				this.div=document.createElement('div');
-				this.div.style.width=900+"px";
-				this.div.style.height=450+"px";
+				this.div.style.width="900px";
+				this.div.style.height="450px";
 				this.div.style.margin="auto";
 				this.div.style.position="relative";
 				this.div.style.background="url(images/bg.png) repeat";
@@ -55,7 +55,6 @@
 				this.showFood=function(){
 					if(this.div==null){
 						var num=Math.round(Math.random()*7);
-						console.log(num);
 						this.div=document.createElement('div');
 						this.div.style.width=this.div.style.height="30px";
 						this.div.style.background="url(images/food"+num+".png) no-repeat";
